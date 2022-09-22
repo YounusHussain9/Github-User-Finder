@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  font: 1;
+}
+
 body {
   background-color: #0d1117;
 }
@@ -84,10 +88,7 @@ body {
   flex-direction: row;
 }
 
-.followingdiv,
-.reposdiv {
-  margin-left: 0rem;
-}
+
 
 .Txtdiv {
   position: relative;
@@ -95,24 +96,17 @@ body {
 }
 .followersp {
   font-size: 1rem;
-  position: relative;
-  top: -1rem;
-  left: 2rem;
+ 
   color: white;
 }
 .followingsp {
   font-size: 1rem;
-  position: relative;
-  top: -1rem;
-  left: 1rem;
+  
   color: white;
 }
 
 .repossp {
   font-size: 1rem;
-  position: relative;
-  top: -1rem;
-  left: 1rem;
   color: white;
 }
 
@@ -120,12 +114,11 @@ body {
 .followingh,
 .reposh {
   font-size: 1rem;
-  position: relative;
-  top: 0.5rem;
   font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
+padding: .5em .2em;
 }
 
 .reposh {
@@ -221,867 +214,982 @@ ul {
   margin-left: 0.5rem;
 }
 
-.tagdiv {
-  margin-left: 32%;
-  margin-top: 5rem;
+
+
+
+@media screen and (max-width : 400px){
+/* mobiles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.tag {
+
+.textField{
+  display: flex;
+}
+.textfield{
+  font-size: .8em;
+}
+.btn{
+  font-size: .7em;
+  height: 3.3em;
+  margin-top: 10rem;
+width: 6em;
+}
+.searchdiv{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  color: aqua;
+flex: 1; 
+
+}
+.subsearchdiv{
+  margin: auto;
+  padding: auto;
+width: 9.5em;
+height: 14rem;
 }
 
-@media only screen and (min-width: 20rem) and (max-width: 30rem) {
-  * {
+.searchimg{
+  width: 100%;
+  border-radius: 3%;
+}
+
+.sname{
+  font-size: 1em;
+margin: 0;
+padding: auto;
+}
+
+
+/* Details */
+
+
+.Headdiv{
+  display: flex;
+  flex-direction: row;
+}
+.Imgdiv{
+  width: 6em;
+  margin-left: .1rem;
+border: none;
+}
+.Image{
+  width: 100%;
+}
+.name , .bio ,.location ,.blog{
+  margin: 0;
+  padding: 0;
+  font-size: .8em
+}
+
+.name{
+  margin-top: .2rem;
+}
+.bio{
+margin-top: 2rem;
+}
+
+.Txtdiv{
+  margin: 0;
+  padding: 0;
+left: .5rem;
+}
+
+.followerdiv,.followingdiv,.reposdiv{
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+}
+.followersp,.followingsp,.repossp{
+  margin: 0;
+  padding: 0;
+}
+.followersp,.followingsp,.repossp{
+  font-size: .7em;
+background-color: green;
+padding: .5em .5em;
+border-radius: 2rem;
+}
+
+.followerh,.followingh,.reposh{
+  font-size: .8rem;
+}
+
+.Middle{
+  margin: auto;
+  padding: auto;
+display: flex;
+flex-direction: column;
+}
+.h2{
+  font-size: 1rem;
+}
+.Repository{
+  width: 100%;
+}
+.Lh{
+  font-size: 1rem;
+}
+.Lp{
+  font-size: .8rem;
+}
+.Lh1 , .Lh2{
+  font-size: .7rem;
+}
+.Following{
+  margin: 0;
+  padding: 0;
+  margin-left: 2rem;
+}
+
+.flist{
+  margin-top: 1rem;
+}
+.Loading{
+margin-left: 20%;  
+}
+
+}
+
+
+@media screen and (min-width :401px) and (max-width : 768px){
+  /* tablets */
+  *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-
-  .Loading {
-    margin-left: 25%;
-    margin-top: 20%;
-    display: inline-flex;
+  
+  .textfield{
+    font-size: 1em;
   }
-  .Loadingtxt {
-    color: aquamarine;
-  }
-
-  .inputTextfielddiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .textfield {
-    width: 50%;
+  .btn{
+    font-size: 1em;
+    height: 3em;
     margin-top: 10rem;
-    height: 2em;
-    border-radius: 0.3rem;
-    margin-left: 15%;
-    font-size: 1.3rem;
+  width: 6em;
   }
-  .btn {
-    height: 2.8rem;
-    width: 4.5rem;
-    color: white;
-    background-color: black;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .searchdiv {
+   .searchdiv{
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid black; */
-    margin-top: 5rem;
-  }
-  .subsearchdiv {
-    /* border: 2px solid rgb(29, 35, 29); */
-    /* background-color:blanchedalmond; */
-    padding: 1rem 1rem;
-    margin: 0rem 0rem;
-    margin-left: 0rem;
-    height: 15rem;
-    border-radius: 2rem;
-  }
-
-  .searchimg {
-    min-width: 5rem;
-    max-width: 10rem;
-    border-radius: 7%;
-    border: 1px solid rgb(186, 173, 173);
-  }
-
-  /* Detail */
-
-  .Headdiv {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .InHead {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
-    margin-top: -1rem;
+    margin: auto;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
   }
+  .subsearchdiv{
+  width: 9em;
+margin: 0;
 
-  .Txtdiv {
-    position: relative;
-  }
-  .followerdiv,
-  .followingdiv,
-  .reposdiv {
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    width: 45%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .followersp {
-    font-size: 1.1rem;
-    left: 1.3rem;
-  }
-  .followingsp {
-    font-size: 1.1rem;
-    margin: 0;
-  }
-
-  .repossp {
-    font-size: 1.1rem;
-  }
-
-  .followerh,
-  .followingh,
-  .reposh {
-    font-size: 1rem;
-    right: 0rem;
-    font-weight: bold;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-
-  .reposh {
-    right: 0.5rem;
-  }
-
-  .followerh {
-    right: 1.5rem;
-  }
-
-  .Imgdiv {
-    min-width: 30%;
-    max-width: 40%;
-    height: 50%;
-    margin: 0;
-    margin-top: 1rem;
-  }
-  .Image {
+}
+  
+  .searchimg{
     width: 100%;
-
-    display: block;
+  border-radius: 4%;
   }
-
-  .name,
-  .bio,
-  .location,
-  .blog {
-    margin-left: 0.1em;
-    font-size: 1rem;
+  
+  .sname{
+    font-size: 1.4em;
+  margin: 0;
+  padding: auto;
   }
-
-  .Middle {
+  
+  
+  /* Details */
+  
+  
+  .Headdiv{
     display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
   }
-  .Repository {
-    width: 75%;
-    padding: 2rem 2rem;
-    position: relative;
-
-    margin-left: 1.4rem;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  .InnerList {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .Lh1,
-  .Lh2,
-  .Lp {
-    font-size: 1.2rem;
-  }
-
-  .Following {
-    position: relative;
-    left: 0%;
-    margin-top: 3rem;
-    width: 75%;
-  }
-
-  .fi {
-    width: 2rem;
-    border-radius: 50%;
+  .Imgdiv{
+    width: 2em;
     margin-left: 1rem;
+  border: none;
   }
-
-  .flist {
-    display: inline-flex;
-  }
-  .fLh {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-  }
-
-  .tagdiv {
-    margin-left: 5%;
-    margin-top: 5rem;
-  }
-  .tag {
-    align-items: center;
-    font-size: 1.2rem;
-    color: aqua;
-  }
-}
-
-@media only screen and (min-width: 30.1rem) and (max-width: 37.5rem) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .Loading {
-    margin-left: 25%;
-    margin-top: 20%;
-    display: inline-flex;
-  }
-  .Loadingtxt {
-    color: aquamarine;
-  }
-
-  .inputTextfielddiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .textfield {
-    width: 50%;
-    margin-top: 10rem;
-    height: 2em;
-    border-radius: 0.3rem;
-    margin-left: 15%;
-    font-size: 1.3rem;
-  }
-  .btn {
-    height: 2.8rem;
-    width: 4.5rem;
-    color: white;
-    background-color: black;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .searchdiv {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid black; */
-    margin-top: 5rem;
-  }
-  .subsearchdiv {
-    /* border: 2px solid rgb(29, 35, 29); */
-    /* background-color:blanchedalmond; */
-    padding: 1rem 1rem;
-    margin: 0rem 0rem;
-    margin-left: 0rem;
-    height: 15rem;
-    border-radius: 2rem;
-  }
-
-  .searchimg {
-    min-width: 5rem;
-    max-width: 10rem;
-    border-radius: 7%;
-    border: 1px solid rgb(186, 173, 173);
-  }
-
-  /* Detail */
-
-  .Headdiv {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .InHead {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-top: -1rem;
-  }
-
-  .Txtdiv {
-    position: relative;
-    left: 0%;
-  }
-  .followerdiv,
-  .followingdiv,
-  .reposdiv {
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    width: 45%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .followersp {
-    font-size: 1.2rem;
-    left: 1.3rem;
-  }
-  .followingsp {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .repossp {
-    font-size: 1.2rem;
-  }
-
-  .followerh,
-  .followingh,
-  .reposh {
-    font-size: 1.2rem;
-    right: 0rem;
-    font-weight: bold;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-
-  .reposh {
-    right: 1rem;
-  }
-
-  .followerh {
-    right: 2.2rem;
-  }
-
-  .followingh {
-    right: 1rem;
-  }
-
-  .Imgdiv {
-    min-width: 30%;
-    max-width: 40%;
-    height: 50%;
-    margin: 0;
-    margin-top: 1rem;
-  }
-  .Image {
+  .Image{
     width: 100%;
-    border-radius: 50%;
-    display: block;
   }
+  .name , .bio ,.location ,.blog{
+    margin: 0;
+    padding: 0;
+    font-size: 1em
+  }
+  
+  .name{
+    margin-top: .5rem;
+  }
+  .bio{
+  margin-top: 2rem;
+  }
+  
+  .Txtdiv{
+    margin: 0;
+    padding: 0;
 
-  .name,
-  .bio,
-  .location,
-  .blog {
-    margin-left: 0.1em;
-    font-size: 1.3rem;
   }
-
-  .Middle {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
-    justify-content: space-around;
-    align-items: center;
+  
+  .followerdiv,.followingdiv,.reposdiv{
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
   }
-  .Repository {
-    width: 75%;
-    padding: 2rem 2rem;
-    position: relative;
-
-    margin-left: 1.4rem;
+  .followersp,.followingsp,.repossp{
+    margin: 0;
+    padding: 0;
   }
-
-  ul {
-    list-style: none;
+  .followersp,.followingsp,.repossp{
+    font-size: .7em;
+  background-color: green;
+  padding: .5em .5em;
+  border-radius: 2rem;
   }
-
-  .InnerList {
-    display: flex;
-    justify-content: space-between;
+  
+  .followerh,.followingh,.reposh{
+    font-size: .8rem;
   }
-
-  .h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+  
+  .Middle{
+    margin: auto;
+    padding: auto;
+  display: flex;
+  flex-direction: row ; 
+  
   }
-
-  .Lh1,
-  .Lh2,
-  .Lp {
-    font-size: 1.2rem;
+  .h2{
+    font-size: 1rem;
   }
-
-  .Following {
-    position: relative;
-    left: 0%;
-    margin-top: 3rem;
-    width: 75%;
+  .Repository{
+    width: 100%;
+  margin-left: 3rem;
   }
-
-  .fi {
-    width: 2rem;
-    border-radius: 50%;
-    margin-left: 1rem;
+  .Lh{
+    font-size: 1rem;
   }
-
-  .flist {
-    display: inline-flex;
+  .Lp{
+    font-size: .8rem;
   }
-  .fLh {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+  .Lh1 , .Lh2{
+    font-size: .7rem;
   }
-
-  .tagdiv {
-    margin-left: 10%;
-    margin-top: 5rem;
+  .Following{
+    margin: 0;
+    padding: 0;
+ margin-right: 2.6rem;
+ margin-top: 2rem;
   }
-  .tag {
-    align-items: center;
-    font-size: 1.2rem;
-    color: aqua;
+  
+  .flist{
+    margin-top: 1rem;
   }
+  .fi{
+  width: 1.5rem;
+  }
+  .fLh{
+    font-size: .9em;
+  }
+ 
+  .Loading{
+    margin-left: 35%;  
+    }
 }
 
-@media only screen and (min-width: 37.6rem) and (max-width: 48rem) {
-  * {
-    margin: 0;
-    padding: 0;
+
+
+@media screen and (min-width :769px) and (max-width : 1024px){
+  /* Dektop large screen */
+  *{
     box-sizing: border-box;
-  }
-
-  .Loading {
-    margin-left: 35%;
-    margin-top: 20%;
-    display: inline-flex;
-  }
-  .Loadingtxt {
-    color: aquamarine;
-  }
-
-  .inputTextfielddiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .textfield {
-    width: 50%;
-    margin-top: 10rem;
-    height: 2em;
-    border-radius: 0.3rem;
-    margin-left: 15%;
-    font-size: 1.3rem;
-  }
-  .btn {
-    height: 2.8rem;
-    width: 4.5rem;
-    color: white;
-    background-color: black;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .searchdiv {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid black; */
-    margin-top: 5rem;
-  }
-  .subsearchdiv {
-    /* border: 2px solid rgb(29, 35, 29); */
-    /* background-color:blanchedalmond; */
-    padding: 1rem 1rem;
-    margin: 0rem 0rem;
-    margin-left: 0rem;
-    height: 15rem;
-    border-radius: 2rem;
-  }
-
-  .searchimg {
-    min-width: 5rem;
-    max-width: 10rem;
-    border-radius: 7%;
-    border: 1px solid rgb(186, 173, 173);
-  }
-
-  /* Detail */
-
-  .Headdiv {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .InHead {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
-    margin-top: -1rem;
   }
+  
+  .textfield{
+    font-size: 1.2em;
+  }
+  .btn{
+    font-size: 1em;
+    height: 3.6em;
+    margin-top: 10rem;
+  width: 6em;
+  }
+   .searchdiv{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
+  }
+  .subsearchdiv{
+  width: 12em;
+margin: 0;
 
-  .Txtdiv {
-    position: relative;
+}
+  
+  .searchimg{
+    width: 100%;
+  border-radius: 4%;
   }
-  .followerdiv,
-  .followingdiv,
-  .reposdiv {
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    width: 45%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  
+  .sname{
+    font-size: 1.6em;
+  margin: 0;
+  padding: auto;
   }
-
-  .followersp {
-    font-size: 1.2rem;
-    left: 1.3rem;
-  }
-  .followingsp {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .repossp {
-    font-size: 1.2rem;
-  }
-
-  .followerh,
-  .followingh,
-  .reposh {
-    font-size: 1.2rem;
-    right: 0rem;
-    font-weight: bold;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-
-  .reposh {
-    left: -0.7rem;
-  }
-
-  .followerh {
-    right: 2.2rem;
-  }
-
-  .followingh {
-    right: 1rem;
-  }
-
-  .Imgdiv {
-    min-width: 30%;
-    max-width: 40%;
-    height: 50%;
-    margin: 0;
-    margin-top: 1rem;
-  }
-  .Image {
-    width: 70%;
-    margin-left: 2rem;
-    border-radius: 50%;
-    display: block;
-  }
-
-  .name,
-  .bio,
-  .location,
-  .blog {
-    margin-left: 0.1em;
-    font-size: 1.3rem;
-  }
-
-  .Middle {
+  
+  
+  /* Details */
+  
+  
+  .Headdiv{
     display: flex;
     flex-direction: row;
-    margin-top: 3rem;
-    justify-content: space-evenly;
   }
-  .Repository {
-    width: 50%;
-    padding: 2rem 2rem;
-    position: relative;
-
-    margin-left: 1.4rem;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  .InnerList {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .Lh1,
-  .Lh2,
-  .Lp {
-    font-size: 1.2rem;
-  }
-
-  .Following {
-    position: relative;
-    left: 0%;
-    top: 0;
-    margin-top: 0rem;
-    width: 50%;
-  }
-
-  .fi {
-    width: 2rem;
-    border-radius: 50%;
+  .Imgdiv{
+    width: 4em;
     margin-left: 1rem;
+  border: none;
   }
+  .Image{
+    width: 100%;
+  }
+  .name , .bio ,.location ,.blog{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em
+  }
+  
+  .name{
+    margin-top: .5rem;
+  }
+  .bio{
+  margin-top: 2rem;
+  }
+  
+  .Txtdiv{
+    margin: 0;
+    padding: 0;
 
-  .flist {
-    display: inline-flex;
   }
-  .fLh {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+  
+  .followerdiv,.followingdiv,.reposdiv{
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
   }
-
-  .tagdiv {
-    margin-left: 12%;
-    margin-top: 5rem;
+  .followersp,.followingsp,.repossp{
+    margin: 0;
+    padding: 0;
   }
-  .tag {
-    align-items: center;
-    font-size: 1.2rem;
-    color: aqua;
+  .followersp,.followingsp,.repossp{
+    font-size: .9em;
+  background-color: green;
+  padding: .5em .5em;
+  border-radius: 2rem;
   }
+  
+  .followerh,.followingh,.reposh{
+    font-size: 1rem;
+  }
+  
+  .Middle{
+    margin: auto;
+    padding: auto;
+  display: flex;
+  flex-direction: row ; 
+  
+  }
+  .h2{
+    font-size: 1.5rem;
+  }
+  .Repository{
+    width: 100%;
+  }
+  .Lh{
+    font-size: 1.4rem;
+  }
+  .Lp{
+    font-size: 1rem;
+  }
+  .Lh1 , .Lh2{
+    font-size: .9rem;
+  }
+  .Following{
+    margin: 0;
+    padding: 0;
+ margin-right: 2rem;
+ margin-top: 2rem;
+  }
+  
+  .flist{
+    margin-top: 1rem;
+  }
+  .fi{
+  width: 1.7rem;
+  }
+  .fLh{
+    font-size: 1.2em;
+  }
+  
 }
 
-@media only screen and (min-width: 48rem) and (max-width: 62rem) {
-  * {
-    margin: 0;
-    padding: 0;
+
+
+@media screen and (min-width :1025px) and (max-width : 1200px){
+  /* Dektop large screen */
+  *{
     box-sizing: border-box;
-  }
-
-  .Loading {
-    margin-left: 35%;
-    margin-top: 20%;
-    display: inline-flex;
-  }
-  .Loadingtxt {
-    color: aquamarine;
-  }
-
-  .inputTextfielddiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .textfield {
-    width: 50%;
-    margin-top: 10rem;
-    height: 2em;
-    border-radius: 0.3rem;
-    margin-left: 15%;
-    font-size: 1.3rem;
-  }
-  .btn {
-    height: 2.8rem;
-    width: 4.5rem;
-    color: white;
-    background-color: black;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-
-  .searchdiv {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid black; */
-    margin-top: 5rem;
-  }
-  .subsearchdiv {
-    /* border: 2px solid rgb(29, 35, 29); */
-    /* background-color:blanchedalmond; */
-    padding: 1rem 1rem;
-    margin: 0rem 0rem;
-    margin-left: 0rem;
-    height: 15rem;
-    border-radius: 2rem;
-  }
-
-  .searchimg {
-    min-width: 5rem;
-    max-width: 10rem;
-    border-radius: 7%;
-    border: 1px solid rgb(186, 173, 173);
-  }
-
-  /* Detail */
-
-  .Headdiv {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .InHead {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
-    margin-top: -1rem;
   }
+  
+  .textfield{
+    font-size: 1.2em;
+  }
+  .btn{
+    font-size: 1em;
+    height: 3.6em;
+    margin-top: 10rem;
+  width: 6em;
+  }
+   .searchdiv{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
+  }
+  .subsearchdiv{
+  width: 12em;
+margin: 0;
 
-  .Txtdiv {
-    position: relative;
-    left: 3rem;
+}
+  
+  .searchimg{
+    width: 100%;
+  border-radius: 4%;
   }
-  .followerdiv,
-  .followingdiv,
-  .reposdiv {
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    width: 45%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  
+  .sname{
+    font-size: 1.6em;
+  margin: 0;
+  padding: auto;
   }
-
-  .followersp {
-    font-size: 1.2rem;
-    left: 1.3rem;
-  }
-  .followingsp {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .repossp {
-    font-size: 1.2rem;
-  }
-
-  .followerh,
-  .followingh,
-  .reposh {
-    font-size: 1.2rem;
-    right: 0rem;
-    font-weight: bold;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-
-  .reposh {
-    left: -0.7rem;
-  }
-
-  .followerh {
-    right: 2.2rem;
-  }
-
-  .followingh {
-    right: 1rem;
-  }
-
-  .Imgdiv {
-    border: 2px solid black;
-    min-width: 30%;
-    max-width: 40%;
-    height: 50%;
-    margin: 0;
-    margin-top: 1rem;
-  }
-  .Image {
-    width: 80%;
-    margin-left: 3rem;
-    border-radius: 50%;
-    display: block;
-  }
-
-  .name,
-  .bio,
-  .location,
-  .blog {
-    margin-left: 0.1em;
-    font-size: 1.3rem;
-  }
-
-  .Middle {
+  
+  
+  /* Details */
+  
+  
+  .Headdiv{
     display: flex;
     flex-direction: row;
-    margin-top: 3rem;
-    justify-content: space-evenly;
   }
-  .Repository {
-    width: 50%;
-    padding: 2rem 2rem;
-    position: relative;
-
-    margin-left: 1.4rem;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  .InnerList {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .Lh1,
-  .Lh2,
-  .Lp {
-    font-size: 1.2rem;
-  }
-
-  .Following {
-    position: relative;
-    left: 0%;
-    top: 0;
-    margin-top: 0rem;
-    width: 50%;
-  }
-
-  .fi {
-    width: 2rem;
-    border-radius: 50%;
+  .Imgdiv{
+    width: 4em;
     margin-left: 1rem;
+  border: none;
   }
+  .Image{
+    width: 100%;
+  }
+  .name , .bio ,.location ,.blog{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em
+  }
+  
+  .name{
+    margin-top: .5rem;
+  }
+  .bio{
+  margin-top: 2rem;
+  }
+  
+  .Txtdiv{
+    margin: 0;
+    padding: 0;
 
-  .flist {
+  }
+  
+  .followerdiv,.followingdiv,.reposdiv{
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .followersp,.followingsp,.repossp{
+    margin: 0;
+    padding: 0;
+  }
+  .followersp,.followingsp,.repossp{
+    font-size: .9em;
+  background-color: green;
+  padding: .5em .5em;
+  border-radius: 2rem;
+  }
+  
+  .followerh,.followingh,.reposh{
+    font-size: 1rem;
+  }
+  
+  .Middle{
+    margin: auto;
+    padding: auto;
+  display: flex;
+  flex-direction: row ; 
+  
+  }
+  .h2{
+    font-size: 1.5rem;
+  }
+  .Repository{
+    width: 100%;
+  }
+  .Lh{
+    font-size: 1.4rem;
+  }
+  .Lp{
+    font-size: 1rem;
+  }
+  .Lh1 , .Lh2{
+    font-size: .9rem;
+  }
+  .Following{
+    margin: 0;
+    padding: 0;
+ margin-right: 2rem;
+ margin-top: 2rem;
+  }
+  
+  .flist{
+    margin-top: 1rem;
+  }
+  .fi{
+  width: 1.7rem;
+  }
+  .fLh{
+    font-size: 1.2em;
+  }
+  
+}
+
+
+@media screen and (min-width :1025px) and (max-width : 1280px){
+  /* X large screen */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .textfield{
+    font-size: 1.2em;
+  }
+  .btn{
+    font-size: 1em;
+    height: 3.6em;
+    margin-top: 10rem;
+  width: 6em;
+  }
+   .searchdiv{
     display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
   }
-  .fLh {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
+  .subsearchdiv{
+  width: 12em;
+margin: 0;
+
+}
+  
+  .searchimg{
+    width: 100%;
+  border-radius: 4%;
   }
+  
+  .sname{
+    font-size: 1.6em;
+  margin: 0;
+  padding: auto;
+  }
+  
+  
+  /* Details */
+  
+  
+  .Headdiv{
+    display: flex;
+    flex-direction: row;
+  }
+  .Imgdiv{
+    width: 4em;
+    margin-left: 1rem;
+  border: none;
+  }
+  .Image{
+    width: 100%;
+  }
+  .name , .bio ,.location ,.blog{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em
+  }
+  
+  .name{
+    margin-top: .5rem;
+  }
+  .bio{
+  margin-top: 2rem;
+  }
+  
+  .Txtdiv{
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .followerdiv,.followingdiv,.reposdiv{
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .followersp,.followingsp,.repossp{
+    margin: 0;
+    padding: 0;
+  }
+  .followersp,.followingsp,.repossp{
+    font-size: .9em;
+  background-color: green;
+  padding: .5em .5em;
+  border-radius: 2rem;
+  }
+  
+  .followerh,.followingh,.reposh{
+    font-size: 1rem;
+  }
+  
+  .Middle{
+    margin: auto;
+    padding: auto;
+  display: flex;
+  flex-direction: row ; 
+  
+  }
+  .h2{
+    font-size: 1.5rem;
+  }
+  .Repository{
+    width: 100%;
+  }
+  .Lh{
+    font-size: 1.4rem;
+  }
+  .Lp{
+    font-size: 1rem;
+  }
+  .Lh1 , .Lh2{
+    font-size: .9rem;
+  }
+  .Following{
+    margin: 0;
+    padding: 0;
+ margin-right: 2rem;
+ margin-top: 2rem;
+  }
+  
+  .flist{
+    margin-top: 1rem;
+  }
+  .fi{
+  width: 1.7rem;
+  }
+  .fLh{
+    font-size: 1.2em;
+  }
+  
+}
+
+
+@media screen and (min-width:1280px) and  (max-width : 1366px){
+  /* Dektop large screen */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .textfield{
+    font-size: 1.2em;
+  }
+  .btn{
+    font-size: 1em;
+    height: 3.6em;
+    margin-top: 10rem;
+  width: 6em;
+  }
+   .searchdiv{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
+  }
+  .subsearchdiv{
+  width: 12em;
+margin: 0;
+
+}
+  
+  .searchimg{
+    width: 100%;
+  border-radius: 4%;
+  }
+  
+  .sname{
+    font-size: 1.6em;
+  margin: 0;
+  padding: auto;
+  }
+  
+  
+  /* Details */
+  
+  
+  .Headdiv{
+    display: flex;
+    flex-direction: row;
+  }
+  .Imgdiv{
+    width: 4em;
+    margin-left: 1rem;
+  border: none;
+  }
+  .Image{
+    width: 100%;
+  }
+  .name , .bio ,.location ,.blog{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em
+  }
+  
+  .name{
+    margin-top: .5rem;
+  }
+  .bio{
+  margin-top: 2rem;
+  }
+  
+  .Txtdiv{
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .followerdiv,.followingdiv,.reposdiv{
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .followersp,.followingsp,.repossp{
+    margin: 0;
+    padding: 0;
+  }
+  .followersp,.followingsp,.repossp{
+    font-size: .9em;
+  background-color: green;
+  padding: .5em .5em;
+  border-radius: 2rem;
+  }
+  
+  .followerh,.followingh,.reposh{
+    font-size: 1rem;
+  }
+  
+  .Middle{
+    margin: auto;
+    padding: auto;
+  display: flex;
+  flex-direction: row ; 
+  
+  }
+  .h2{
+    font-size: 1.5rem;
+  }
+  .Repository{
+    width: 100%;
+  }
+  .Lh{
+    font-size: 1.4rem;
+  }
+  .Lp{
+    font-size: 1rem;
+  }
+  .Lh1 , .Lh2{
+    font-size: .9rem;
+  }
+  .Following{
+    margin: 0;
+    padding: 0;
+ margin-right: 2rem;
+ margin-top: 2rem;
+  }
+  
+  .flist{
+    margin-top: 1rem;
+  }
+  .fi{
+  width: 1.7rem;
+  }
+  .fLh{
+    font-size: 1.2em;
+  }
+  
+}
+
+@media screen and(min-width:1366px) and (max-width : 1440px){
+  /* Dektop large screen */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .textfield{
+    font-size: 1.2em;
+  }
+  .btn{
+    font-size: 1em;
+    height: 3.6em;
+    margin-top: 10rem;
+  width: 6em;
+  }
+   .searchdiv{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
+  }
+  .subsearchdiv{
+  width: 12em;
+margin: 0;
+
+}
+  
+  .searchimg{
+    width: 100%;
+  border-radius: 4%;
+  }
+  
+  .sname{
+    font-size: 1.6em;
+  margin: 0;
+  padding: auto;
+  }
+  
+  
+  /* Details */
+  
+  
+  .Headdiv{
+    display: flex;
+    flex-direction: row;
+  }
+  .Imgdiv{
+    width: 4em;
+    margin-left: 1rem;
+  border: none;
+  }
+  .Image{
+    width: 100%;
+  }
+  .name , .bio ,.location ,.blog{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em
+  }
+  
+  .name{
+    margin-top: .5rem;
+  }
+  .bio{
+  margin-top: 2rem;
+  }
+  
+  .Txtdiv{
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .followerdiv,.followingdiv,.reposdiv{
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .followersp,.followingsp,.repossp{
+    margin: 0;
+    padding: 0;
+  }
+  .followersp,.followingsp,.repossp{
+    font-size: .9em;
+  background-color: green;
+  padding: .5em .5em;
+  border-radius: 2rem;
+  }
+  
+  .followerh,.followingh,.reposh{
+    font-size: 1rem;
+  }
+  
+  .Middle{
+    margin: auto;
+    padding: auto;
+  display: flex;
+  flex-direction: row ; 
+  
+  }
+  .h2{
+    font-size: 1.5rem;
+  }
+  .Repository{
+    width: 100%;
+  }
+  .Lh{
+    font-size: 1.4rem;
+  }
+  .Lp{
+    font-size: 1rem;
+  }
+  .Lh1 , .Lh2{
+    font-size: .9rem;
+  }
+  .Following{
+    margin: 0;
+    padding: 0;
+ margin-right: 2rem;
+ margin-top: 2rem;
+  }
+  
+  .flist{
+    margin-top: 1rem;
+  }
+  .fi{
+  width: 1.7rem;
+  }
+  .fLh{
+    font-size: 1.2em;
+  }
+  
 }

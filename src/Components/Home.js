@@ -73,14 +73,13 @@ const Home = () => {
             onChange={(e) => setUser(e.target.value)}
             className="textfield"
           />
-          <button onClick={onClick} className="btn">
+                    <button onClick={onClick} className="btn">
             Search
           </button>
-          
 
-        </div>
-        <section>
-          <div>
+</div>
+          
+        <section >
             {specUser.length !== 0 || specUser.length > 0 ? (
               <>
                 {specUser.map((curUser) => {
@@ -153,7 +152,7 @@ const Home = () => {
                 </div>
               </>
             )}
-          </div>
+          
           <div className="tagdiv">
             <h className='tag'>Develope and Design By Younus @ All Rights Reserved</h>
           </div>

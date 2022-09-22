@@ -75,15 +75,15 @@ const follRes = await follReq.json();
 
           <div className="Txtdiv">
             <h1 className="name"> {users.name} </h1>
-
+            <br/>
             <h className="bio"> {users.bio}</h>
-            <br />
+            <br/>
             <h className="location">{users.location ? `${users.location}`: "----"}</h>
-            <br />
+            <br/>
             <h className="blog">{users.blog ? `${users.blog}`: "----"}</h>
             <br />
             <br />
-            <br />
+            
 
             <div className="InHead">
               <div className="followerdiv">
@@ -108,7 +108,6 @@ const follRes = await follReq.json();
           <div className="Repository">
             <h2 className="h2">Repositories</h2>
             <div>
-              <br />
 
 {repo.map((repo)=>(
             <ul>
@@ -137,7 +136,7 @@ const follRes = await follReq.json();
           </div>
           <div className="Following"><h2 className="h2">Followers</h2>
 
-{followers ? <>
+{followers.length > 0 ? <>
 {followers.map((follower)=>(
 <div>
 <ul className="flist">
@@ -147,7 +146,9 @@ const follRes = await follReq.json();
 </div>
 ))}
 
-</> : "no-follower to show"}
+</> :<>
+<h style={{color:'white'}}>No Follower</h>
+</>}
 
 
             </div>
